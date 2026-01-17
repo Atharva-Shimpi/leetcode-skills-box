@@ -94,7 +94,7 @@ total character length of each label and bar does not exceed 46 characters.
 def create_graph(df: pd.DataFrame) -> str:
     max_str = max(df["skill"][0:5].str.len())
     max_digit = len(str(df["count"].max()))
-    bar_len = 46 - (max_str + max_digit + 4)
+    bar_len = 42 - (max_str + max_digit + 4)
 
     df["pct"] = df["count"] / df["count"].max() * bar_len
 
@@ -126,3 +126,4 @@ def update_gist(graph: str) -> None:
 
 if __name__ == "__main__":
     main()
+
