@@ -5,6 +5,7 @@ on:
       - main
   schedule:
     - cron: "0 0 * * *"
+  workflow_dispatch:
 jobs:
   update-gist:
     runs-on: ubuntu-latest
@@ -27,3 +28,4 @@ jobs:
           LEETCODE_USERNAME: ${{ secrets.LEETCODE_USERNAME }}
           IGNORED_SKILLS: ${{ vars.IGNORED_SKILLS }}
           HIDE_DIFFICULTY: ${{ vars.HIDE_DIFFICULTY }}
+
