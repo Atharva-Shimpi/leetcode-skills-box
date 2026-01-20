@@ -2,7 +2,6 @@
 <p align="center">
    <img src="leetcode-skills-box.png">
    <p align="center">Automatically update a pinned gist with your top leetcode skills.</p>
-   <p align="center">📌 Check out more pinned gists at <a href="https://github.com/matchai/awesome-pinned-gists">Awesome Pinned Gists</a></p>
 </p>
 
 ## Getting Started
