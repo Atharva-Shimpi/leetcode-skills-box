@@ -106,8 +106,8 @@ def create_graph(df: pd.DataFrame) -> str:
     graph_str = ""
     for i in range(0, min(len(df), 5)):
         graph_str += f.format(df["skill"][i], df["count"][i],
-                                   '◉' * round(df["pct"][i]),
-                                   '◎' * (bar_len - round(df["pct"][i])),
+                                   '●' * round(df["pct"][i]),
+                                   '◌' * (bar_len - round(df["pct"][i])),
                                     df["difficulty"][i])
 
     return graph_str
@@ -126,6 +126,7 @@ def update_gist(graph: str) -> None:
 
 if __name__ == "__main__":
     main()
+
 
 
 
